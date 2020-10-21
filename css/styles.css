@@ -1,0 +1,214 @@
+html {
+	font-family: 'Open sans', 'sans-serif';
+	color: #373A3C;
+}
+
+body {
+	background-color: #FFFAFA;
+}
+
+a {
+	transition: .5s;
+}
+
+/* barra fixa lateral */
+
+#barralateral {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #98F5FF;
+	padding-top: 40px;
+}
+
+#barralateral h1 {
+	color: #FFF;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#barralateral a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#barralateral a:hover {
+	color: #F4EF5E;
+}
+
+#barralateral li {
+	padding: 20px;
+}
+
+.barralateral-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.logo-oms {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* conteudo */
+
+.content {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+	color: #006599;
+	margin-bottom: 30px;
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content h2 {
+	font-size: 35px;
+}
+
+section {
+	padding-left: 50px;
+}
+
+/* bem vindo */
+
+#sessao-sobreoms {
+	padding-left: 0;
+}
+
+.sessao-bemvindo-content {
+	padding-left: 50px;
+}
+
+#sessao-sobreoms .banner {
+	height: 500px;
+	background-image: url('../img/imgsobrenos.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+#sessao-sobreoms h1 {
+	margin-top: 70px;
+}
+
+#sessao-sobreoms::after, #sessao-materia::after {
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+	width: 300px;
+	height: 400px;
+	background-image: url('../img/bannermedico3.jpg');
+	background-position: center;
+	background-size: cover;
+	float: left;
+}
+
+.sessao-descricao {
+	position: absolute;
+	left: 370px;
+	padding-right: 30px;
+}
+
+.sessao-descricao p {
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+	background-color: #006599;
+	color: #FFF;
+	text-decoration: none;
+	padding: 20px 40px;
+	transition: .5s;
+	display: block;
+	width: 100px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+	background-color: #2790C6;
+}
+
+/* sessao sobre */
+
+#sessao-materia .sessao-minibanner {
+	float: right;
+	margin-right: 50px;
+	background-image: url('../img/imgMascara.jpg');
+}
+
+#sessao-materia .sessao-descricao {
+	position: absolute;
+	left: 25px;
+	width: calc(100% - 400px);
+}
+
+/* contato */
+
+#form-contato {
+	width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+	display: block;
+	border: 1px solid #006599;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+	border-color: #2790C6;
+}
+
+#form-contato textarea {
+	height: 150px;
+}
+
+#form-contato ::placeholder {
+	color: #2790C6;
+}
+
+#form-contato input[type=submit] {
+	margin-left: 0;
+	font-size: 16px;
+	width: 180px;
+}
+
+/* footer */
+
+footer {
+	height: 100px;
+	padding-top: 150px;
+	color: #006599;
+}
+
+footer p {
+	text-align: center;
+	font-weight: bold;
+}
